@@ -4,7 +4,7 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
-
+var nunjucksRender = require('gulp-nunjucks-render');
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
@@ -40,6 +40,17 @@ function lint(files, options) {
     .pipe($.eslint.format())
     .pipe($.if(!browserSync.active, $.eslint.failAfterError()));
 }
+
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('app/pages/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['app/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('app'))
+});
 
 gulp.task('lint', () => {
   return lint('app/scripts/**/*.js', {
@@ -160,6 +171,9 @@ gulp.task('serve:test', ['scripts'], () => {
   gulp.watch('test/spec/**/*.js').on('change', reload);
   gulp.watch('test/spec/**/*.js', ['lint:test']);
 });
+
+
+
 
 // inject bower components
 gulp.task('wiredep', () => {
