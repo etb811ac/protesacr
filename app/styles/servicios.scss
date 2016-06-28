@@ -1,0 +1,264 @@
+$smal-devices: 768px;
+
+.services {
+    border-bottom: 1px solid gray;
+    display: table-cell;
+
+    .title {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .serviceOne {
+        display: -webkit-inline-box;
+        margin: 6vh 0;
+
+        @media (max-width: $smal-devices) {
+            margin: 1vh 0;
+        }
+
+        .images {
+            display: block;
+
+            img {
+                height: 35vh;
+            }
+
+            .outlet {
+                position: relative;
+                opacity: 0;
+            }
+
+            .animatedOutlet {
+                /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: outlet 1s forwards;
+
+                /* Firefox < 16 */
+                -ms-animation: outlet 1s;
+
+                /* Internet Explorer */
+                -o-animation: outlet 1s forwards;
+
+                /* Opera < 12.1 */
+                animation: outlet 1s forwards;
+            }
+
+            .bulb {
+                position: absolute;
+                opacity: 0;
+            }
+
+            .animatedBulb {
+                /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: bulb 1.5s forwards;
+
+                /* Firefox < 16 */
+                -ms-animation: bulb 1.5s;
+
+                /* Internet Explorer */
+                -o-animation: bulb 1.5s forwards;
+
+                /* Opera < 12.1 */
+                animation: bulb 1.5s forwards;
+            }
+
+            .alarmKit {
+                position: absolute;
+                height: 34vh;
+                opacity: 0;
+            }
+
+            .animatedAlarmKit {
+                /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: alarm 1.5s forwards;
+
+                /* Firefox < 16 */
+                -ms-animation: alarm 1.5s;
+
+                /* Internet Explorer */
+                -o-animation: alarm 1.5s forwards;
+
+                /* Opera < 12.1 */
+                animation: alarm 1.5s forwards;
+            }
+
+            .cameraBullet {
+                position: absolute;
+                opacity: 0;
+            }
+
+            .animatedCameraBullet {
+                /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: cameraBullet 1.5s forwards;
+
+                /* Firefox < 16 */
+                -ms-animation: cameraBullet 1.5s;
+
+                /* Internet Explorer */
+                -o-animation: cameraBullet 1.5s forwards;
+
+                /* Opera < 12.1 */
+                animation: cameraBullet 1.5s forwards;
+            }
+
+            .cameraOval {
+                position: absolute;
+                left:-80%;
+                opacity: 0;
+            }
+
+            .animatedCameraOval {
+                /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: cameraOval 1.5s forwards;
+
+                /* Firefox < 16 */
+                -ms-animation: cameraOval 1.5s;
+
+                /* Internet Explorer */
+                -o-animation: cameraOval 1.5s forwards;
+
+                /* Opera < 12.1 */
+                animation: cameraOval 1.5s forwards;
+            }
+
+            .firePanel {
+                position: absolute;
+                opacity: 0;
+            }
+
+            .animatedFirePanel {
+                /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: incendio 1.5s forwards;
+
+                /* Firefox < 16 */
+                -ms-animation: incendio 1.5s;
+
+                /* Internet Explorer */
+                -o-animation: incendio 1.5s forwards;
+
+                /* Opera < 12.1 */
+                animation: incendio 1.5s forwards;
+            }
+        }
+
+        .text {
+            opacity: 0;
+            margin-top: 7vh;
+
+            @media (max-width: $smal-devices) {
+                margin-top: 1vh;
+            }
+        }
+
+        .animatedText {
+            /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 1.5s forwards;
+
+            /* Firefox < 16 */
+            -ms-animation: fadein 1.5s;
+
+            /* Internet Explorer */
+            -o-animation: fadein 1.5s forwards;
+
+            /* Opera < 12.1 */
+            animation: fadein 1.5s forwards;
+        }
+    }
+}
+
+//keyframes animaciones Servivios
+
+//bombillo
+@keyframes bulb {
+    0% {
+        opacity: 0;
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        left: 200px;
+        top: 10px;
+        transform: rotate(21deg);
+    }
+}
+
+//outlet
+@keyframes outlet {
+    0% {
+        opacity: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        left: 100px;
+        transform: rotate(0deg);
+    }
+}
+
+//alarma
+@keyframes alarm {
+    0% {
+        opacity: 0;
+        left: 43%;
+        top: -18%;
+        transform: rotate(21deg);
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+        top: 0;
+        transform: rotate(0deg);
+    }
+}
+
+//camara bullet
+@keyframes cameraBullet {
+    0% {
+        opacity: 0;
+        left: 240px;
+        bottom: 0;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+        bottom: 40px;
+    }
+}
+
+//camara domo
+@keyframes cameraOval {
+    0% {
+        opacity: 0;
+        left: 300%;
+        bottom: 0;
+        transform: rotate(100deg);
+    }
+
+    100% {
+        opacity: 1;
+        left: 30%;
+        transform: rotate(180deg);
+    }
+}
+
+//luz incendio
+@keyframes incendio {
+    0% {
+        opacity: 0;
+        right: 540px;
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        opacity: 1;
+        right: 40px;
+        transform: rotate(5deg);
+    }
+}

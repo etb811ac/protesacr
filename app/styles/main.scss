@@ -1,0 +1,163 @@
+$icon-font-path: "../fonts/";
+$smal-devices: 768px;
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// endbower
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.slick{
+    div{
+        background-color: grey;
+        border: solid 1px black;
+    }
+}
+/* Space out content a bit */
+body {
+    padding: 0;
+    width: 100%;
+    section{
+      height: 100vh;
+      border-bottom: 1px solid gray;
+    }
+
+    .container-fluid {
+        padding: 0;
+
+        .navigation {
+            .container-fluid {
+                padding-left: 15px;
+                padding-right: 15px;
+
+                .navbar-header {
+                    @media (min-width: 768px) {
+                        width: 136px;
+                    }
+
+                    .navbar-brand {
+                        width: 100%;
+
+                        @media (max-width: 768px) {
+                            width: 40%;
+                        }
+
+                        padding: 5px, 0, 0, 15px;
+
+                        img {
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .homepage-hero-module {
+            border-right: none;
+            border-left: none;
+            position: relative;
+
+            .mainLogo {
+                z-index: 1;
+                position: absolute;
+
+                @media (max-width: $smal-devices) {
+                    top: 50%;
+                    left: 38%;
+                    height: 30%;
+                    width: 80%;
+                    margin: -10% 0 0 -25%;
+                }
+
+                @media (min-width: $smal-devices+1) {
+                    top: 50%;
+                    left: 50%;
+                    height: 30%;
+                    width: 50%;
+                    margin: -10% 0 0 -25%;
+                }
+
+                -webkit-animation: fadein 2s;
+
+                /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 2s;
+
+                /* Firefox < 16 */
+                -ms-animation: fadein 2s;
+
+                /* Internet Explorer */
+                -o-animation: fadein 2s;
+
+                /* Opera < 12.1 */
+                animation: fadein 2s;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .video-container {
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                background: #000;
+                z-index: -4;
+
+                .poster img {
+                    width: 100%;
+                    bottom: 0;
+                    position: absolute;
+                    z-index: -3;
+                }
+
+                .filter {
+                    z-index: -1;
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0.4);
+                    width: 100%;
+                }
+
+                video {
+                    position: absolute;
+                    z-index: -2;
+                    object-fit: cover;
+                    height: 100vh;
+                }
+            }
+
+            .video-container video.fillWidth {
+                width: 100%;
+            }
+        }
+
+        .no-video .video-container video,
+        .touch .video-container video {
+            display: none;
+        }
+
+        .no-video .video-container .poster,
+        .touch .video-container .poster {
+            display: block !important;
+        }
+
+        @import "servicios.scss";
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
