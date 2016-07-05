@@ -1,0 +1,31 @@
+.Proyectos {
+
+	.title{
+		margin: 4vh 0;
+		text-align: center;
+	}
+
+    .firstSlide {
+    	height: 50vh;
+    	border: solid 1px black;
+        div {
+            background-color: grey;
+            border: solid 1px black;
+        }
+    }
+
+    .secondSlide {
+    	margin-top: 5vh;
+    	height: 20vh;
+    	border: solid 1px black;
+    	.slick-arrow{
+    		border: solid 1px black;
+    	}
+    	.content {
+            background-color: grey;
+            border: solid 1px black;
+            height: 100%;
+            margin:1vh;
+        }
+    }
+}

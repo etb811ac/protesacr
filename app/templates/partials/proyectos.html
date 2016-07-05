@@ -3,16 +3,24 @@
 </div>
 <div class="row">
   <div class="col-xs-12 col-sm-offset-2 col-sm-8">
-    <div class="slick">
-      <div>p1</div>
-      <div>p2</div>
-      <div>p3</div>
-      <div>p1</div>
-      <div>p2</div>
-      <div>p3</div>
-      <div>p1</div>
-      <div>p2</div>
-      <div>p3</div>
+    <div class="firstSlide">
+      {% for project in projects %}
+      <div class="content">
+        <h1>{{project.name}}</h1>
+      </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+    <div class="secondSlide">
+      {% for project in projects %}
+      <div class="content">
+        <h1>{{project.name}}</h1>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </div>

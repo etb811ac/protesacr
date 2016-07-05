@@ -1,6 +1,6 @@
 $smal-devices: 768px;
 
-.services {
+.Servicios {
     border-bottom: 1px solid gray;
     display: table-cell;
 
@@ -63,7 +63,9 @@ $smal-devices: 768px;
             }
 
             .alarmKit {
+
                 position: absolute;
+                left:-80%;
                 height: 34vh;
                 opacity: 0;
             }
@@ -84,6 +86,7 @@ $smal-devices: 768px;
 
             .cameraBullet {
                 position: absolute;
+                left:-80%;
                 opacity: 0;
             }
 

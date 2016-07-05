@@ -12,12 +12,6 @@ $smal-devices: 768px;
     padding: 0.2em 0;
 }
 
-.slick{
-    div{
-        background-color: grey;
-        border: solid 1px black;
-    }
-}
 /* Space out content a bit */
 body {
     padding: 0;
@@ -149,6 +143,7 @@ body {
         }
 
         @import "servicios.scss";
+        @import "proyectos.scss";
     }
 }
 

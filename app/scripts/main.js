@@ -12,11 +12,21 @@ $( document ).ready(function() {
     	animations();
     });
 
-    $('.slick').slick({
-    	infinite: true,
-  		slidesToShow: 3,
-  		slidesToScroll: 3,
-  		dots:true
+    $('.firstSlide').slick({
+    	slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.secondSlide'
+    });
+
+    $('.secondSlide').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.firstSlide',
+        dots:true,
+        centerMode: true,
+        focusOnSelect: true
     });
     
     $(window).on('resize', function() {
