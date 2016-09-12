@@ -15,15 +15,14 @@ $smal-devices: 768px;
 /* Space out content a bit */
 body {
     padding: 0;
-    width: 100%;
+    overflow-y: hidden;
     section{
-      height: 100vh;
-      border-bottom: 1px solid gray;
+      height: 100vh!important;
+
     }
 
     .container-fluid {
         padding: 0;
-
         .navigation {
             .container-fluid {
                 padding-left: 15px;
@@ -144,6 +143,9 @@ body {
 
         @import "servicios.scss";
         @import "proyectos.scss";
+        @import "quienesSomos.scss";
+        @import "contacto.scss";
+        @import "footer.scss";
     }
 }
 

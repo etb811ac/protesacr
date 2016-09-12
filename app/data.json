@@ -2,43 +2,275 @@
   "projects": [
     {
       "id": "001",
-      "name": "Proyecto 1",
-      "description": "jhkklasdf sjkdfasdf asdfkjasnfdjlkaslsjkndfasdf asdkjfn"
+      "name": "CEN Ciudad Neily",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros.",
+      "images": [
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img1.jpg",
+          "description": "imagen1"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img2.jpg",
+          "description": "imagen2"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img3.jpg",
+          "description": "imagen3"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img4.jpg",
+          "description": "imagen4"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img5.jpg",
+          "description": "imagen5"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img6.jpg",
+          "description": "imagen6"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img7.jpg",
+          "description": "imagen7"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img8.jpg",
+          "description": "imagen8"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img9.jpg",
+          "description": "imagen9"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img10.jpg",
+          "description": "imagen10"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img11.jpg",
+          "description": "imagen11"
+        },
+        {
+          "src": "images/proyectos/CEN Ciudad Neily/img12.jpg",
+          "description": "imagen12"
+        }
+      ]
     },
     {
       "id": "002",
       "name": "Proyecto 2",
-      "description": "jhkklasdf sjkdfasdf asdfkjasnfdjlkaslsjkndfasdf asdkjfn"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros.",
+      "images": [
+        {
+          "src": "images/proyectos/p1/img4.jpg",
+          "description": "imagen1"
+        },
+        {
+          "src": "images/proyectos/p1/img4.jpg",
+          "description": "imagen2"
+        },
+        {
+          "src": "images/proyectos/p1/img3.jpg",
+          "description": "imagen3"
+        },
+        {
+          "src": "images/proyectos/p1/img2.jpg",
+          "description": "imagen4"
+        },
+        {
+          "src": "images/proyectos/p1/img5.jpg",
+          "description": "imagen5"
+        },
+        {
+          "src": "images/proyectos/p1/img6.jpg",
+          "description": "imagen6"
+        }
+      ]
     },
     {
       "id": "003",
       "name": "Proyecto 3",
-      "description": "jhkklasdf sjkdfasdf asdfkjasnfdjlkaslsjkndfasdf asdkjfn"
-    },
-    {
-      "id": "003",
-      "name": "Proyecto 4",
-      "description": "jhkklasdf sjkdfasdf asdfkjasnfdjlkaslsjkndfasdf asdkjfn"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros.",
+      "images": [
+        {
+          "src": "images/proyectos/p1/img2.jpg",
+          "description": "imagen1"
+        },
+        {
+          "src": "images/proyectos/p1/img1.jpg",
+          "description": "imagen2"
+        },
+        {
+          "src": "images/proyectos/p1/img3.jpg",
+          "description": "imagen3"
+        },
+        {
+          "src": "images/proyectos/p1/img4.jpg",
+          "description": "imagen4"
+        },
+        {
+          "src": "images/proyectos/p1/img5.jpg",
+          "description": "imagen5"
+        },
+        {
+          "src": "images/proyectos/p1/img6.jpg",
+          "description": "imagen6"
+        }
+      ]
     },
     {
       "id": "004",
-      "name": "Proyecto 5",
-      "description": "jhkklasdf sjkdfasdf asdfkjasnfdjlkaslsjkndfasdf asdkjfn"
+      "name": "Proyecto 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros.",
+      "images": [
+        {
+          "src": "images/proyectos/p1/img3.jpg",
+          "description": "imagen1"
+        },
+        {
+          "src": "images/proyectos/p1/img2.jpg",
+          "description": "imagen2"
+        },
+        {
+          "src": "images/proyectos/p1/img1.jpg",
+          "description": "imagen3"
+        },
+        {
+          "src": "images/proyectos/p1/img4.jpg",
+          "description": "imagen4"
+        },
+        {
+          "src": "images/proyectos/p1/img5.jpg",
+          "description": "imagen5"
+        },
+        {
+          "src": "images/proyectos/p1/img6.jpg",
+          "description": "imagen6"
+        }
+      ]
     },
     {
       "id": "005",
-      "name": "Proyecto 6",
-      "description": "jhkklasdf sjkdfasdf asdfkjasnfdjlkaslsjkndfasdf asdkjfn"
+      "name": "Proyecto 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros.",
+      "images": [
+        {
+          "src": "images/proyectos/p1/img5.jpg",
+          "description": "imagen1"
+        },
+        {
+          "src": "images/proyectos/p1/img2.jpg",
+          "description": "imagen2"
+        },
+        {
+          "src": "images/proyectos/p1/img3.jpg",
+          "description": "imagen3"
+        },
+        {
+          "src": "images/proyectos/p1/img4.jpg",
+          "description": "imagen4"
+        },
+        {
+          "src": "images/proyectos/p1/img1.jpg",
+          "description": "imagen5"
+        },
+        {
+          "src": "images/proyectos/p1/img6.jpg",
+          "description": "imagen6"
+        }
+      ]
     },
     {
       "id": "006",
-      "name": "Proyecto 7",
-      "description": "jhkklasdf sjkdfasdf asdfkjasnfdjlkaslsjkndfasdf asdkjfn"
+      "name": "Proyecto 6",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros.",
+      "images":[
+        {
+          "src": "images/proyectos/p1/img4.jpg",
+          "description": "imagen1"
+        },
+        {
+          "src": "images/proyectos/p1/img2.jpg",
+          "description": "imagen2"
+        },
+        {
+          "src": "images/proyectos/p1/img3.jpg",
+          "description": "imagen3"
+        },
+        {
+          "src": "images/proyectos/p1/img1.jpg",
+          "description": "imagen4"
+        },
+        {
+          "src": "images/proyectos/p1/img5.jpg",
+          "description": "imagen5"
+        },
+        {
+          "src": "images/proyectos/p1/img6.jpg",
+          "description": "imagen6"
+        }
+      ]
     },
     {
       "id": "007",
+      "name": "Proyecto 7",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros.",
+      "images": [
+        {
+          "src": "images/proyectos/p1/img2.jpg",
+          "description": "imagen1"
+        },
+        {
+          "src": "images/proyectos/p1/img3.jpg",
+          "description": "imagen2"
+        },
+        {
+          "src": "images/proyectos/p1/img1.jpg",
+          "description": "imagen3"
+        },
+        {
+          "src": "images/proyectos/p1/img4.jpg",
+          "description": "imagen4"
+        },
+        {
+          "src": "images/proyectos/p1/img5.jpg",
+          "description": "imagen5"
+        },
+        {
+          "src": "images/proyectos/p1/img6.jpg",
+          "description": "imagen6"
+        }
+      ]
+    },
+    {
+      "id": "008",
       "name": "Proyecto 8",
-      "description": "jhkklasdf sjkdfasdf asdfkjasnfdjlkaslsjkndfasdf asdkjfn"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros.",
+      "images": [
+        {
+          "src": "images/proyectos/p1/img6.jpg",
+          "description": "imagen1"
+        },
+        {
+          "src": "images/proyectos/p1/img2.jpg",
+          "description": "imagen2"
+        },
+        {
+          "src": "images/proyectos/p1/img3.jpg",
+          "description": "imagen3"
+        },
+        {
+          "src": "images/proyectos/p1/img4.jpg",
+          "description": "imagen4"
+        },
+        {
+          "src": "images/proyectos/p1/img5.jpg",
+          "description": "imagen5"
+        },
+        {
+          "src": "images/proyectos/p1/img1.jpg",
+          "description": "imagen6"
+        }
+      ]
     }
 
   ]

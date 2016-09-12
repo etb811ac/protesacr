@@ -13,41 +13,70 @@
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css styles/main.css -->
+  <!-- build:css styles/main.css --> 
   <link rel="stylesheet" href="styles/main.css">
+ <link href="https://fonts.googleapis.com/css?family=Bitter|Lato" rel="stylesheet">
   <!-- endbuild -->
   
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
-<body>
+<body data-spy="scroll" data-target="#Navbar">
   <!--[if lt IE 10]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   
   <div class="container-fluid">
-    <section class="homepage-hero-module">
+  <!--nav-->
+<nav id="Navbar" class="navbar navbar-inverse navigation navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed navbar-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png">
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="mHome active"><a href="#Home">Home</a></li>
+        <li class="mServicios"><a href="#Services">Servicios</a></li>
+        <li class="mProyectos"><a href="#Projects">Proyectos</a></li>
+        <li class="mQSomos"><a href="#WhoWeAre">Quienes Somos?</a></li>
+        <li class="mContacto"><a href="#Contact">Contacto</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+    <section id="Home" class="row section homepage-hero-module">
       {% include "partials/home.html"%}
     </section>
     <!--servicios-->
-    <section class="Servicios clearfix">
-      {% include "partials/servicios.html" %}
+    <section id="Services" class="row Servicios clearfix">
+      {% include "partials/servicios.html" %} 
     </section>
     <!--Proyectos-->
-    <section class="Proyectos clearfix">
+    <section id="Projects" class="row section Proyectos clearfix">
       {% include "partials/proyectos.html" %}
     </section>
     <!--QuienesSomos-->
-    <section class="QuiensSomos">
+    <section id="WhoWeAre" class="row section QuienesSomos clearfix">
       {% include "partials/quienesSomos.html" %}
     </section>
     <!--Contacto-->
-    <section class="Contacto">
+    <section id="Contact" class="row section Contacto clearfix">
       {% include "partials/contacto.html" %}
     </section>
-    <footer>
-      <h1>Brands</h1>
+    <footer class="footer">
+      {% include "partials/brands.html"%}
     </footer>
   </div>
   
@@ -82,6 +111,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="scrollify/scrollify.min.js"></script>
   <!-- endbuild -->
   
   <!-- build:js scripts/main.js -->
