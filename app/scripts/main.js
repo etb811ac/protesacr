@@ -59,10 +59,6 @@ $( document ).ready(function() {
         scaleBannerVideoSize('.video-container .filter');
         scaleBannerVideoSize('.video-container video');
     });
-    $.scrollify({
-        section:'.section',
-        interstitialSection : '.footer'
-    });
 });
 
 function animations(){

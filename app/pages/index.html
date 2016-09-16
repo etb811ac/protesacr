@@ -6,8 +6,10 @@
   <title>Protesa</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!--slick stuff-->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
@@ -21,6 +23,8 @@
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+
+  <meta name="google-site-verification" content="1_SfLslVkeDbwMxEGn55QSEdAmWhU2BLqbYHnBrP0Tc" />
 </head>
 <body data-spy="scroll" data-target="#Navbar">
   <!--[if lt IE 10]>
@@ -29,33 +33,7 @@
   
   <div class="container-fluid">
   <!--nav-->
-<nav id="Navbar" class="navbar navbar-inverse navigation navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed navbar-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png">
-      </a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="mHome active"><a href="#Home">Home</a></li>
-        <li class="mServicios"><a href="#Services">Servicios</a></li>
-        <li class="mProyectos"><a href="#Projects">Proyectos</a></li>
-        <li class="mQSomos"><a href="#WhoWeAre">Quienes Somos?</a></li>
-        <li class="mContacto"><a href="#Contact">Contacto</a></li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+  {% include "partials/nav.html" %}
     <section id="Home" class="row section homepage-hero-module">
       {% include "partials/home.html"%}
     </section>
@@ -64,17 +42,19 @@
       {% include "partials/servicios.html" %} 
     </section>
     <!--Proyectos-->
+    <!--
     <section id="Projects" class="row section Proyectos clearfix">
-      {% include "partials/proyectos.html" %}
-    </section>
+   
+    </section> -->
     <!--QuienesSomos-->
     <section id="WhoWeAre" class="row section QuienesSomos clearfix">
       {% include "partials/quienesSomos.html" %}
     </section>
     <!--Contacto-->
+    <!--
     <section id="Contact" class="row section Contacto clearfix">
-      {% include "partials/contacto.html" %}
-    </section>
+ 
+    </section>-->
     <footer class="footer">
       {% include "partials/brands.html"%}
     </footer>
@@ -89,11 +69,15 @@
   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
   ga('create','UA-XXXXX-X');ga('send','pageview');
   </script>
+
+  
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
+
+
   
   <!-- build:js scripts/plugins.js -->
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
@@ -108,10 +92,6 @@
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="scrollify/scrollify.min.js"></script>
   <!-- endbuild -->
   
   <!-- build:js scripts/main.js -->
