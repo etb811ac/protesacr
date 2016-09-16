@@ -6,30 +6,34 @@
   <title>Protesa</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!--slick stuff-->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css styles/main.css -->
+  <!-- build:css styles/main.css --> 
   <link rel="stylesheet" href="styles/main.css">
+ <link href="https://fonts.googleapis.com/css?family=Bitter|Lato" rel="stylesheet">
   <!-- endbuild -->
   
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+
+  <meta name="google-site-verification" content="1_SfLslVkeDbwMxEGn55QSEdAmWhU2BLqbYHnBrP0Tc" />
 </head>
-<body>
+<body data-spy="scroll" data-target="#Navbar">
   <!--[if lt IE 10]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   
   <div class="container-fluid">
-    <section class="homepage-hero-module">
-      <!--nav-->
-<nav class="navbar navbar-inverse navigation navbar-fixed-top">
+  <!--nav-->
+  <nav id="Navbar" class="navbar navbar-inverse navigation navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -46,18 +50,19 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="mHome active"><a href="#">Home</a></li>
-        <li class="mServicios"><a href="#">Servicios</a></li>
-        <li class="mProyectos"><a href="#">Proyectos</a></li>
-        <li class="mQSomos"><a href="#">Qienes Somos?</a></li>
-        <li class="mContacto"><a href="#">Contacto</a></li>
+        <li class="mHome active"><a href="#Home">Home</a></li>
+        <li class="mServicios"><a href="#Services">Servicios</a></li>
+        <li class="mProyectos"><a href="#Projects">Proyectos</a></li>
+        <li class="mQSomos"><a href="#WhoWeAre">Quienes Somos?</a></li>
+        <li class="mContacto"><a href="#Contact">Contacto</a></li>
         
       </ul>
     </div>
   </div>
 </nav>
 
-<!--protesa logo-->
+    <section id="Home" class="row section homepage-hero-module">
+      <!--protesa logo-->
 <div class="col-xm-12 col-sm-12 col-md-6 col-md-offset-3 mainLogo">
   <img src="images/logo.png">
 </div>
@@ -75,156 +80,96 @@
 </div>
     </section>
     <!--servicios-->
-    <section class="Servicios clearfix">
+    <section id="Services" class="row Servicios clearfix">
       <!-- servicios.html -->
-
-<div class="col-xs-12 title"><H1>Nuestros Servicios</H1></div>
-          <!--servicio 1-->
-          <div class="serviceOne row">
-            <div class=" images col-sm-5 hidden-xs">
-              <img class="outlet" src="images/servicios/outlet.png">
-              <img class="bulb" src="images/servicios/bulb.png">
-            </div>
-            <div class=" text col-sm-6">
-              <h2>Instalaciones Electricas</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros. Curabitur lobortis erat a hendrerit scelerisque. Mauris erat felis, molestie sed nunc et, varius mattis ligula. Aenean orci metus, laoreet in ultrices vel, facilisis sed odio. Etiam ac sodales lacus.</p>
-            </div>
-          </div>
-          <!--servicio 2-->
-          <div class="serviceOne row">
-            <div class=" text col-sm-offset-1 col-sm-6">
-              <h2>Sistemas de Alarmas</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros. Curabitur lobortis erat a hendrerit scelerisque. Mauris erat felis, molestie sed nunc et, varius mattis ligula. Aenean orci metus, laoreet in ultrices vel, facilisis sed odio. Etiam ac sodales lacus.</p>
-            </div>
-            <div class=" images col-sm-offset-1 col-sm-4 hidden-xs">
-              <img class="alarmKit" src="images/servicios/alarmKit.png">
-            </div>
-          </div>
-          <!--servicio 3-->
-          <div class="serviceOne row">
-            <div class=" images col-sm-5 hidden-xs">
-              <img class="firePanel" src="images/servicios/fireLight.png">
-            </div>
-            <div class=" text col-sm-6">
-              <h2>Sistemas contra Incendios</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros. Curabitur lobortis erat a hendrerit scelerisque. Mauris erat felis, molestie sed nunc et, varius mattis ligula. Aenean orci metus, laoreet in ultrices vel, facilisis sed odio. Etiam ac sodales lacus.</p>
-            </div>
-          </div>
-          <!--servicio 4-->
-          <div class="serviceOne row">
-            <div class=" text col-sm-offset-1 col-sm-6 ">
-              <h2>Sistemas de CCTV</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros. Curabitur lobortis erat a hendrerit scelerisque. Mauris erat felis, molestie sed nunc et, varius mattis ligula. Aenean orci metus, laoreet in ultrices vel, facilisis sed odio. Etiam ac sodales lacus.</p>
-            </div>
-            <div class=" images col-sm-4 hidden-xs">
-              <img class="cameraBullet" src="images/servicios/cameraBullet.png">
-              <img class="cameraOval" src="images/servicios/cameraOval.png">
-            </div>
-          </div>
+<div class="section">
+  <div class="col-xs-12 title"><H1>Nuestros Servicios</H1></div>
+  <!--servicio 1-->
+  <div class="services serviceOne row">
+    <div class=" images col-sm-5 hidden-xs">
+      <img class="outlet" src="images/servicios/outlet.png">
+      <img class="bulb" src="images/servicios/bulb.png">
+    </div>
+    <div class=" text col-sm-6">
+      <h2>Instalaciones Electricas</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros. Curabitur lobortis erat a hendrerit scelerisque. Mauris erat felis, molestie sed nunc et, varius mattis ligula. Aenean orci metus, laoreet in ultrices vel, facilisis sed odio. Etiam ac sodales lacus.</p>
+    </div>
+  </div>
+  <!--servicio 2-->
+  <div class="services serviceTwo row">
+    <div class=" text col-sm-offset-1 col-sm-6">
+      <h2>Sistemas de Alarmas</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros. Curabitur lobortis erat a hendrerit scelerisque. Mauris erat felis, molestie sed nunc et, varius mattis ligula. Aenean orci metus, laoreet in ultrices vel, facilisis sed odio. Etiam ac sodales lacus.</p>
+    </div>
+    <div class=" images col-sm-offset-1 col-sm-4 hidden-xs">
+      <img class="alarmKit" src="images/servicios/alarmkit.png">
+    </div>
+  </div>
+</div>
+<div class="section">
+  <!--servicio 3-->
+  <div class="services serviceThree row">
+    <div class=" images col-sm-5 hidden-xs">
+      <img class="firePanel" src="images/servicios/fireLight.png">
+    </div>
+    <div class=" text col-sm-6">
+      <h2>Sistemas contra Incendios</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros. Curabitur lobortis erat a hendrerit scelerisque. Mauris erat felis, molestie sed nunc et, varius mattis ligula. Aenean orci metus, laoreet in ultrices vel, facilisis sed odio. Etiam ac sodales lacus.</p>
+    </div>
+  </div>
+  <!--servicio 4-->
+  <div class="services serviceFour row">
+    <div class=" text col-sm-offset-1 col-sm-6 ">
+      <h2>Sistemas de CCTV</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna velit, tincidunt id justo eu, egestas scelerisque ligula. Cras eleifend elementum tortor, vel mattis nisl sollicitudin a. Integer auctor erat odio, eget porta lectus tempus quis. Duis quis venenatis justo, et gravida eros. Curabitur lobortis erat a hendrerit scelerisque. Mauris erat felis, molestie sed nunc et, varius mattis ligula. Aenean orci metus, laoreet in ultrices vel, facilisis sed odio. Etiam ac sodales lacus.</p>
+    </div>
+    <div class=" images col-sm-4 hidden-xs">
+      <img class="cameraBullet" src="images/servicios/cameraBullet.png">
+      <img class="cameraOval" src="images/servicios/cameraOval.png">
+    </div>
+  </div>
+</div> 
     </section>
     <!--Proyectos-->
-    <section class="Proyectos clearfix">
-      <div class="row">
-  <div class="col-xs-12 title"><H1>Proyectos</H1></div>
-</div>
-<div class="row">
-  <div class="col-xs-12 col-sm-offset-2 col-sm-8">
-    <div class="firstSlide">
-      
-      <div class="content">
-        <h1>Proyecto 1</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 2</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 3</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 4</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 5</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 6</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 7</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 8</h1>
-      </div>
-      
-      
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12 col-sm-offset-2 col-sm-8">
-    <div class="secondSlide">
-      
-      <div class="content">
-        <h1>Proyecto 1</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 2</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 3</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 4</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 5</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 6</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 7</h1>
-      </div>
-      
-      <div class="content">
-        <h1>Proyecto 8</h1>
-      </div>
-      
-    </div>
-  </div>
-</div>
-    </section>
+    <!--
+    <section id="Projects" class="row section Proyectos clearfix">
+   
+    </section> -->
     <!--QuienesSomos-->
-    <section class="QuiensSomos">
-      <div class="col-xs-12 title"><H1>Quienes Somos?</H1>
-	<p class="test">testing quienes somos</p>
-
+    <section id="WhoWeAre" class="row section QuienesSomos clearfix">
+      <div class="row">
+	<div class="col-xs-12 title"><H1>Quienes Somos?</H1>
+	</div>
 </div>
-    </section>
-    <!--Contacto-->
-    <section class="Contacto">
-      <div class="col-xs-12 title"><H1>Contacto</H1></div>
+<div class="row content">
+	<div class="col-xs-12 col-sm-4 col-sm-offset-1 mision">
+		<h2>Misión</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non erat odio. Nam congue ultricies massa quis ullamcorper. Praesent id consectetur nulla. Nulla vehicula ex leo, in efficitur leo porta ac. Ut et elit erat. Maecenas condimentum odio ac ipsum facilisis tristique. Aliquam eleifend aliquam mi, nec commodo nibh dapibus in. Phasellus a tortor eget libero consequat dictum ut eget tortor. Morbi tempor tincidunt tortor, id congue magna tempus quis. Suspendisse potenti. Praesent laoreet tincidunt dignissim. Mauris ac tellus id augue tempus sodales.
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-4 col-sm-offset-2 vision">
+		<h2>Visión</h2>
+		<p>Maecenas placerat at dolor in ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc aliquam odio ut justo cursus dictum. Fusce bibendum nibh vulputate neque euismod aliquet. Nulla commodo euismod dolor vel consectetur. Nam finibus quam nec diam rhoncus volutpat. Proin orci orci, rhoncus quis sem sed, pharetra maximus mauris. Sed in mauris ultrices, imperdiet est ac, maximus quam. Suspendisse id nisl gravida, consequat diam pellentesque, dignissim arcu. Donec blandit, est sit amet bibendum faucibus, turpis ipsum vestibulum eros, a mattis felis mauris sed dolor. Sed a tincidunt turpis. Vivamus auctor turpis in mi tempus, at facilisis sem pellentesque.
+		</p>
+	</div>
+</div>
+
 <div class="row">
-	<div class="col-sm-4">
-		<p>testing</p>
+	<div class="col-xs-12 logo">
+		<img src="images/logo.png">
 	</div>
 </div>
     </section>
-    <footer>
-      <h1>Brands</h1>
+    <!--Contacto-->
+    <!--
+    <section id="Contact" class="row section Contacto clearfix">
+ 
+    </section>-->
+    <footer class="footer">
+      <img src="images/brands/paradox-logo.png">
+<img src="images/brands/dahua-logo.png">
+<img src="images/brands/dlux-logo.png">
+<img src="images/brands/schneider-logo.png">
     </footer>
   </div>
   
@@ -237,11 +182,15 @@
   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
   ga('create','UA-XXXXX-X');ga('send','pageview');
   </script>
+
+  
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
+
+
   
   <!-- build:js scripts/plugins.js -->
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
@@ -256,9 +205,6 @@
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
   <!-- endbuild -->
   
   <!-- build:js scripts/main.js -->

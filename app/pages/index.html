@@ -6,48 +6,57 @@
   <title>Protesa</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!--slick stuff-->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <!-- endbower -->
   <!-- endbuild -->
-  <!-- build:css styles/main.css -->
+  <!-- build:css styles/main.css --> 
   <link rel="stylesheet" href="styles/main.css">
+ <link href="https://fonts.googleapis.com/css?family=Bitter|Lato" rel="stylesheet">
   <!-- endbuild -->
   
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+
+  <meta name="google-site-verification" content="1_SfLslVkeDbwMxEGn55QSEdAmWhU2BLqbYHnBrP0Tc" />
 </head>
-<body>
+<body data-spy="scroll" data-target="#Navbar">
   <!--[if lt IE 10]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   
   <div class="container-fluid">
-    <section class="homepage-hero-module">
+  <!--nav-->
+  {% include "partials/nav.html" %}
+    <section id="Home" class="row section homepage-hero-module">
       {% include "partials/home.html"%}
     </section>
     <!--servicios-->
-    <section class="Servicios clearfix">
-      {% include "partials/servicios.html" %}
+    <section id="Services" class="row Servicios clearfix">
+      {% include "partials/servicios.html" %} 
     </section>
     <!--Proyectos-->
-    <section class="Proyectos clearfix">
-      {% include "partials/proyectos.html" %}
-    </section>
+    <!--
+    <section id="Projects" class="row section Proyectos clearfix">
+   
+    </section> -->
     <!--QuienesSomos-->
-    <section class="QuiensSomos">
+    <section id="WhoWeAre" class="row section QuienesSomos clearfix">
       {% include "partials/quienesSomos.html" %}
     </section>
     <!--Contacto-->
-    <section class="Contacto">
-      {% include "partials/contacto.html" %}
-    </section>
-    <footer>
-      <h1>Brands</h1>
+    <!--
+    <section id="Contact" class="row section Contacto clearfix">
+ 
+    </section>-->
+    <footer class="footer">
+      {% include "partials/brands.html"%}
     </footer>
   </div>
   
@@ -60,11 +69,15 @@
   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
   ga('create','UA-XXXXX-X');ga('send','pageview');
   </script>
+
+  
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
+
+
   
   <!-- build:js scripts/plugins.js -->
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
@@ -79,9 +92,6 @@
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
   <!-- endbuild -->
   
   <!-- build:js scripts/main.js -->
